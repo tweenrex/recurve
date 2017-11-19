@@ -43,7 +43,7 @@
         "postversion": "git push --follow-tags && npm publish --access=\"public\"",
         "preversion": "npm run rebuild",
         "rebuild": "npm run clean && npm run build",
-        "start": "concurrently \"npm run build:watch\" \"npm run test:watch\" ",
+        "start": "concurrently -k --kill-others-on-fail -p [{name}:{pid}] -n build,test \"npm run build:watch\" \"npm run test:watch\" ",
         "test": "jest",
         "test:watch": "jest && jest --watchAll"
     },
