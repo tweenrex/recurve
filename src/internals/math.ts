@@ -6,6 +6,6 @@ export const sin = math.sin;
 export const sqrt = math.sqrt;
 export const pow = math.pow;
 
-export const clamp = function(n:number) {
-    return max(0.0, min(1.0, n));
+export const clamp = function(n:number, minval:number = 0.0, maxval:number = 1.0) {
+    return max(minval, min(maxval, n));
 }

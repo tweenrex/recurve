@@ -1,4 +1,4 @@
-import { min, max, clamp } from '../internals/math';
+import { clamp } from '../internals/math';
 
 export const repeat = function(n:number) {
     return n - ~~n;
@@ -12,4 +12,4 @@ export const pingpong = function(n:number) {
 };
 
 export const pad = clamp;
-export clamp;
+export { clamp };
