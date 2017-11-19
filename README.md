@@ -1,6 +1,6 @@
-# Empty Project
+# Recurve
 
-This project contains ____ for the TweenRex project.  The empty project is a template for other projects.
+This project contains utility functions for easing, curves, etc for the TweenRex project.
 
 ## Questions / Documentation
 Please go to [TweenRex](https://github.com/tweenrex/tweenrex) to ask questions and find documentation.
