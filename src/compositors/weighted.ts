@@ -29,5 +29,5 @@ export const weighted = function(funcs, weights = []) {
             }
         }
         return 1.0; // just in case
-    }
+    };
 };
