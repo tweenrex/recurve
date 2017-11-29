@@ -1,4 +1,5 @@
 const math = Math;
+export const abs = math.abs;
 export const min = math.min;
 export const max = math.max;
 export const cos = math.cos;

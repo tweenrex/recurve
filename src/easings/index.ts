@@ -25,3 +25,5 @@ export * from './bounce';
 export * from './back';
 
 export * from './elastic';
+
+export * from './bezier';
