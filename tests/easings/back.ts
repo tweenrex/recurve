@@ -29,19 +29,19 @@ describe('back.inOut()', () => {
     it('easeInOutBack(.000000) is about 0', () => {
         assert.approximately(back.inOut(0.0), 0, 0.0001);
     });
-    xit('easeInOutBack(.250000) is about -.09968184375', () => {
+    it('easeInOutBack(.250000) is about -.09968184375', () => {
         assert.approximately(back.inOut(0.25), -0.09968184375, 0.0001);
     });
-    xit('easeInOutBack(.333333) is about -.0440673703703704', () => {
+    it('easeInOutBack(.333333) is about -.0440673703703704', () => {
         assert.approximately(back.inOut(0.333333), -0.0440673703703704, 0.0001);
     });
     it('easeInOutBack(.500000) is about .5', () => {
         assert.approximately(back.inOut(0.5), 0.5, 0.0001);
     });
-    xit('easeInOutBack(.666667) is about 1.0440673703703702', () => {
+    it('easeInOutBack(.666667) is about 1.0440673703703702', () => {
         assert.approximately(back.inOut(0.666667), 1.0440673703703702, 0.0001);
     });
-    xit('easeInOutBack(.750000) is about 1.09968184375', () => {
+    it('easeInOutBack(.750000) is about 1.09968184375', () => {
         assert.approximately(back.inOut(0.75), 1.09968184375, 0.0001);
     });
     it('easeInOutBack(1.000000) is about 1', () => {

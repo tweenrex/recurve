@@ -1,3 +1,9 @@
-export * from './easings';
-export * from './normalizers';
-export * from './compositors';
+export { back } from './easings/back'
+export { bounce } from './easings/bounce'
+export { circ } from './easings/circ'
+export { cubicBezier } from './easings/cubicBezier'
+export { elastic } from './easings/elastic'
+export { expo } from './easings/expo'
+export { linear } from './easings/linear'
+export { power, quad, cubic, quart, quint } from './easings/power'
+export { sine } from './easings/sine'

@@ -1,3 +1,1 @@
-import { weighted } from './weighted';
-export { weighted };
-export const combine = weighted;
+export { weighted } from './weighted'

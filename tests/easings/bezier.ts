@@ -1,4 +1,4 @@
-import { cubicBezier } from '../../src/easings/bezier';
+import { cubicBezier } from '../../src/easings/cubicBezier';
 import { assert } from 'chai';
 
 describe('cubicBezier()', () => {

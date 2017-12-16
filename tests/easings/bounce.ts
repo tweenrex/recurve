@@ -29,22 +29,22 @@ describe('bounce.inOut()', () => {
     it('bounce.inOut(.000000) is about 0', () => {
         assert.approximately(bounce.inOut(0.0), 0, 0.0001);
     });
-    xit('bounce.inOut(.250000) is about .1171875', () => {
+    it('bounce.inOut(.250000) is about .1171875', () => {
         assert.approximately(bounce.inOut(0.25), 0.1171875, 0.0001);
     });
-    xit('bounce.inOut(.333333) is about .07986111111111105', () => {
+    it('bounce.inOut(.333333) is about .07986111111111105', () => {
         assert.approximately(bounce.inOut(0.333333), 0.07986111111111105, 0.0001);
     });
-    xit('bounce.inOut(.500000) is about .5', () => {
+    it('bounce.inOut(.500000) is about .5', () => {
         assert.approximately(bounce.inOut(0.5), 0.5, 0.0001);
     });
-    xit('bounce.inOut(.666667) is about .9201388888888886', () => {
+    it('bounce.inOut(.666667) is about .9201388888888886', () => {
         assert.approximately(bounce.inOut(0.666667), 0.9201388888888886, 0.0001);
     });
-    xit('bounce.inOut(.750000) is about .8828125', () => {
+    it('bounce.inOut(.750000) is about .8828125', () => {
         assert.approximately(bounce.inOut(0.75), 0.8828125, 0.0001);
     });
-    xit('bounce.inOut(1.000000) is about 1', () => {
+    it('bounce.inOut(1.000000) is about 1', () => {
         assert.approximately(bounce.inOut(1.0), 1, 0.0001);
     });
 });
