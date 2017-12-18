@@ -25,7 +25,7 @@
         "transform": {
             "^.+\\.(ts)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
         },
-        "testRegex": "tests/.*/.*\\.ts$"
+        "testRegex": "tests/*/.*\\.ts$"
     },
     "license": "MIT",
     "main": "index.js",

@@ -1,1 +1,0 @@
-export { weighted } from './weighted'
