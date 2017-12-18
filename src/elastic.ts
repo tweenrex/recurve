@@ -4,7 +4,7 @@ import { recurve } from './recurve'
 import { IEasingInOut, IElasticEasing } from './types'
 
 const elastic = ((amplitude: number, period: number, bounces: number) => {
-    const s = period / 4
+    const s = period / bounces
 
     return recurve(n => {
         if (n === 0 || n === 1) {
