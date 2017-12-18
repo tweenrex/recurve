@@ -20,7 +20,7 @@ export { steps } from './steps'
 
 // export compositors/normalizers
 export { blend } from './blend'
-export { custom } from './custom'
+export { recurve } from './recurve'
 export { chain } from './chain'
 export { divide } from './divide'
 export { mirror } from './mirror'

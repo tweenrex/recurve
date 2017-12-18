@@ -1,3 +1,7 @@
+/**
+ * TODO: we may want to unroll this for performance reasons
+ */
+
 import { power } from './power';
 
 /**

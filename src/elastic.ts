@@ -1,16 +1,21 @@
 import { tau } from './internal/constants'
 import { sin, pow } from './internal/math'
-import { custom } from './custom'
+import { recurve } from './recurve'
+import { IEasingInOut, IElasticEasing } from './types'
 
+const elastic = ((amplitude: number, period: number, bounces: number) => {
+    const s = period / 4
 
-const amplitude = 1.1
-const d1 = 2.5
+    return recurve(n => {
+        if (n === 0 || n === 1) {
+            return n
+        }
+        return -amplitude * pow(2, 10 * (n - 1)) * sin((n - 1 - s) * tau / period)
+    })
+}) as IEasingInOut & IElasticEasing
 
-function elasticIn(n: number) {
-    if (!n || n === 1) {
-        return n
-    }
-    return -1 * pow(2, 10 * (n - 1)) * sin((n - amplitude) * tau * d1)
-}
-
-export const elastic = custom(elasticIn)
+const defaultEasing = elastic(1, 0.4, 4)
+elastic.in = defaultEasing.in
+elastic.out = defaultEasing.out
+elastic.inOut = defaultEasing.inOut
+export { elastic }

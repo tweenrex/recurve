@@ -15,3 +15,10 @@ export interface IBackEasing  {
 export interface IBounceEasing  {
     (n1: number): IEasingInOut
 }
+
+export interface IElasticEasing {
+    (amplitude: number, period: number, bounces: number): IEasingInOut
+}
+export interface IExpoEasing {
+    (f: number): IEasingInOut
+}

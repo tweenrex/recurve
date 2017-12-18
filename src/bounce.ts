@@ -1,4 +1,4 @@
-import { custom } from './custom'
+import { recurve } from './recurve'
 import { mirror } from './mirror'
 import { IEasingInOut, IBounceEasing } from './types'
 
@@ -9,7 +9,7 @@ import { IEasingInOut, IBounceEasing } from './types'
  * Creates a bounce easing.
  */
 const bounce = ((n1: number) => {
-    return custom(
+    return recurve(
         mirror(n => {
             if (n < 0.36363636) {
                 // (-1.0/2.75) to (1.0/2.75), centered on (0.0/2.75)

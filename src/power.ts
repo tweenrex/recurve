@@ -1,6 +1,6 @@
 import { pow } from './internal/math'
-import { custom } from './custom'
+import { recurve } from './recurve'
 
 export function power(c: number) {
-    return custom(n => pow(n, c))
+    return recurve(n => pow(n, c))
 }
