@@ -1,4 +1,4 @@
-import { power } from './power';
+import { power } from './power'
 
 /**
  * Quad easing (n ** 2)

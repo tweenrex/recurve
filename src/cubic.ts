@@ -2,7 +2,7 @@
  * TODO: we may want to unroll this for performance reasons
  */
 
-import { power } from './power';
+import { power } from './power'
 
 /**
  * Cubic easing (n ** 3)

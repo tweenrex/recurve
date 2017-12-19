@@ -8,11 +8,11 @@ export interface IEasingInOut {
     inOut: IEasing
 }
 
-export interface IBackEasing  {
+export interface IBackEasing {
     (f: number): IEasingInOut
 }
 
-export interface IBounceEasing  {
+export interface IBounceEasing {
     (n1: number): IEasingInOut
 }
 

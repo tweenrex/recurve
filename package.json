@@ -12,6 +12,8 @@
         "concurrently": "^3.5.0",
         "del-cli": "^1.1.0",
         "jest": "^21.2.1",
+        "pre-commit": "^1.2.2",
+        "prettier": "^1.9.2",
         "ts-jest": "^21.2.1",
         "tslint": "^5.7.0",
         "typescript": "^2.6.1"
@@ -40,6 +42,7 @@
         "build:es2015": "tsc -p tsconfig.es2015.json",
         "build:watch": "tsc -p tsconfig.node.json -w",
         "clean": "node_modules/.bin/del-cli -f dist lib lib.es2015 types",
+        "format": "prettier --print-width 120 --single-quote --no-semi --write \"src/**/*.ts\"",
         "postversion": "git push --follow-tags && npm publish --access=\"public\"",
         "preversion": "npm run rebuild",
         "rebuild": "npm run clean && npm run build",
@@ -47,6 +50,9 @@
         "test": "jest",
         "test:watch": "jest && jest --watchAll"
     },
+    "pre-commit": [
+        "format"
+    ],
     "types": "./types/index",
     "typings": "./types/index",
     "typeRoots": [

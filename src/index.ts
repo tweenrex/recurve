@@ -1,9 +1,9 @@
 // export power easings
 export { power } from './power'
 export { linear } from './linear'
-export { quad  } from './quad'
-export { cubic  } from './cubic'
-export { quart  } from './quart'
+export { quad } from './quad'
+export { cubic } from './cubic'
+export { quart } from './quart'
 export { quint } from './quint'
 
 // export other pennier easings

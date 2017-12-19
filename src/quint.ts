@@ -1,4 +1,4 @@
-import { power } from './power';
+import { power } from './power'
 
 /**
  * Quint easing (n ** 5)
