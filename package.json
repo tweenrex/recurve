@@ -12,7 +12,6 @@
         "concurrently": "^3.5.0",
         "del-cli": "^1.1.0",
         "jest": "^21.2.1",
-        "pre-commit": "^1.2.2",
         "prettier": "^1.9.2",
         "ts-jest": "^21.2.1",
         "tslint": "^5.7.0",
@@ -50,9 +49,6 @@
         "test": "jest",
         "test:watch": "jest && jest --watchAll"
     },
-    "pre-commit": [
-        "format"
-    ],
     "types": "./types/index",
     "typings": "./types/index",
     "typeRoots": [
